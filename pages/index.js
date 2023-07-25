@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable no-unused-vars */
 import axios from "axios";
 import { useContext } from "react";
 import { toast } from "react-toastify";
