@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import styles from "../styles/Footer.module.css";
 
 const Footer = () => {
@@ -16,7 +16,7 @@ const Footer = () => {
         <div className={styles.card}>
           <h1 className={styles.title}>FIND OUR STORE</h1>
           <p className={styles.text}>
-            B1-403 Int'l Building Materials Mkt.,.
+            B1-403 Int`&aposl Building Materials Mkt.,.
             <br /> DeiDei, Abuja-FCT.
             <br /> CALL: 08063645038, 07054571786,08024764665.
           </p>

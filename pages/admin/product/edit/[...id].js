@@ -16,7 +16,7 @@ export default function EditScreen() {
       // console.log(response.data);
       setProductInfo(response.data);
     });
-  }, []);
+  }, [id]);
   console.log("product", productInfo);
   return (
     <div>

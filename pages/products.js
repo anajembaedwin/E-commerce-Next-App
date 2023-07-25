@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Layout from "../components/Layout";
 import db from "../utils/db";
@@ -6,11 +7,11 @@ import Link from "next/link";
 import { TbCurrencyNaira } from "react-icons/tb";
 import { Store } from "../utils/Store";
 import axios from "axios";
-import { useContext } from "react";
+import { UseContext } from "react";
 import { toast } from "react-toastify";
 
 const products = ({ products }) => {
-  const { state, dispatch } = useContext(Store);
+  const { state, dispatch } = UseContext(Store);
   const { cart } = state;
 
   const addToCartHandler = async (product) => {
