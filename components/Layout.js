@@ -107,6 +107,7 @@ export default function Layout({ title, children }) {
                   </button>
                 </form>
               </div>
+              <br></br>
               {showNav ? (
                 <AiFillCloseCircle
                   onClick={handleCloseMenu}
