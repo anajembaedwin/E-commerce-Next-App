@@ -76,7 +76,6 @@ export default function Layout({ title, children }) {
                 </div>
                 <div className="ml-3 text-white text-xs md:text-xl">
                   {/* <div className=" text-white">ORDER NOW!</div> */}
-
                   <div className=" text-white">OBI-EXCEL TOOLS</div>
                   <div className=" text-white">+2348063645038</div>
                 </div>
@@ -88,24 +87,26 @@ export default function Layout({ title, children }) {
               >
                 OBI-EXCEL TOOLS
               </Link> */}
-              <form
-                onSubmit={submitHandler}
-                className="mx-auto flex items-center   justify-center"
-              >
-                <input
-                  onChange={(e) => setQuery(e.target.value)}
-                  type="text"
-                  className="rounded-tr-none rounded-br-none p-1 text-sm   focus:ring-0"
-                  placeholder="Search products"
-                />
-                <button
-                  className="rounded rounded-tl-none rounded-bl-none bg-white p-1 text-sm dark:text-black"
-                  type="submit"
-                  id="button-addon2"
+              <div className="responsive-container">
+                <form
+                  onSubmit={submitHandler}
+                  className="mx-auto flex items-center   justify-center"
                 >
-                  <SearchIcon className="h-5 w-5"></SearchIcon>
-                </button>
-              </form>
+                  <input
+                    onChange={(e) => setQuery(e.target.value)}
+                    type="text"
+                    className="rounded-tr-none rounded-br-none p-1 text-sm   focus:ring-0"
+                    placeholder="Search products"
+                  />
+                  <button
+                    className="rounded rounded-tl-none rounded-bl-none bg-white p-1 text-sm dark:text-black"
+                    type="submit"
+                    id="button-addon2"
+                  >
+                    <SearchIcon className="h-5 w-5"></SearchIcon>
+                  </button>
+                </form>
+              </div>
               {showNav ? (
                 <AiFillCloseCircle
                   onClick={handleCloseMenu}
