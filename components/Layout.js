@@ -82,30 +82,6 @@ export default function Layout({ title, children }) {
                 </div>
               </Link>
 
-              {/* <Link
-                href="/"
-                className="text-sm md:text-lg px-5 lg:px-0 text-white my-auto hover:text-white font-bold"
-              >
-                OBI-EXCEL TOOLS
-              </Link> */}
-              <form
-                // onSubmit={submitHandler}
-                // className="mx-auto flex items-center   justify-center"
-              >
-                {/* <input
-                  onChange={(e) => setQuery(e.target.value)}
-                  type="text"
-                  className="rounded-tr-none rounded-br-none p-1 text-sm   focus:ring-0"
-                  placeholder="Search products"
-                /> */}
-                <button
-                  className="rounded rounded-tl-none rounded-bl-none bg-white p-1 text-sm dark:text-black"
-                  type="submit"
-                  id="button-addon2"
-                >
-                  <SearchIcon className="h-5 w-5"></SearchIcon>
-                </button>
-              </form>
               {showNav ? (
                 <AiFillCloseCircle
                   onClick={handleCloseMenu}
@@ -217,6 +193,33 @@ export default function Layout({ title, children }) {
                 </Link>
               )}
             </div>
+
+
+            <Link
+                href="/"
+                className="text-sm md:text-lg px-5 lg:px-0 text-white my-auto hover:text-white font-bold"
+              >
+                OBI-EXCEL TOOLS
+              </Link> 
+              <form
+                // onSubmit={submitHandler}
+                // className="mx-auto flex items-center   justify-center"
+              >
+              <input
+                  onChange={(e) => setQuery(e.target.value)}
+                  type="text"
+                  className="rounded-tr-none rounded-br-none p-1 text-sm   focus:ring-0"
+                  placeholder="Search products"
+                />
+                <button
+                  className="rounded rounded-tl-none rounded-bl-none bg-white p-1 text-sm dark:text-black"
+                  type="submit"
+                  id="button-addon2"
+                >
+                  <SearchIcon className="h-5 w-5"></SearchIcon>
+                </button>
+              </form>
+
           </nav>
         </header>
         <main className="container m-auto mt-4 px-4">{children}</main>
