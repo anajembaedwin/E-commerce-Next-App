@@ -77,7 +77,7 @@ export default function Layout({ title, children }) {
                 <div className="ml-3 text-white text-xs md:text-xl">
                   {/* <div className=" text-white">ORDER NOW!</div> */}
                   <div className=" text-white">OBI-EXCEL TOOLS</div>
-                  <div className=" text-white">+2348063645038</div>
+                  {/* <div className=" text-white">+2348063645038</div> */}
                 </div>
               </Link>
 
