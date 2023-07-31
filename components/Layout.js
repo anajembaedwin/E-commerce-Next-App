@@ -88,7 +88,7 @@ export default function Layout({ title, children }) {
                 OBI-EXCEL TOOLS
               </Link> */}
               
-              <br></br>
+              {/* <br></br> */}
               {showNav ? (
                 <AiFillCloseCircle
                   onClick={handleCloseMenu}
@@ -222,7 +222,7 @@ export default function Layout({ title, children }) {
               </div>
 
 
-              
+
           </nav>
         </header>
         <main className="container m-auto mt-4 px-4">{children}</main>
